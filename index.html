@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Shribytes' Portfolio</title>
+</head>
+<body>
+    <div class="banner">
+        <span style="font-size: 40px">><strong>shribytes</strong></span>
+        <a id="link-github" href="https://github.com/shribytes">https://github.com/shribytes</a>
+        <ul class="navbar">
+            <li><a href="#certifications">LearnKey</a></li>
+            <li><a href="#astroblaster">ASTROBLASTER</a></li>
+            <li><a href="#raw-mark">ASTROBLASTER</a></li>
+        </ul>
+    </div>
+
+    <!--Certifications-->
+    <div id="certifications">
+        <table width="100%">
+            <tr>
+                <td width="50%">
+                    <img src="assets/LKlogo.png" alt="Image of top half the CIE PUM to Raw Mark Convertor by shribytes."
+                    style="width: 100%; margin: 5px">
+                </td>
+                <td>
+                    <h1>LearnKey Certifications</h1>
+                    During my schooling, I have obtained many LearnKey certifications, these
+                    show my technological abilities and knowledge of various aspects of
+                    computer science and information technology.
+                    These include:
+                    <ul class="list-certs">
+                        <li>IC3 Digital Literacy: GS5, GS6</li>
+                        <li>MOS: Word, Powerpoint, Excel, Excel Expert, Acess</li>
+                        <li>Adobe: Photoshop, Dreamweaver</li>
+                        <li>ITS: HTML & CSS, Python</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--CIE Raw Mark Convertor-->
+    <div id="raw-mark">
+        <table width="100%">
+            <tr>
+                <td>
+                    <h1>CIE Raw Mark Convertor</h1>
+                    <h3><a href="https://shribytes.github.io/cie-raw-converter/">Visit</a></h3>
+                    The CIE Raw Mark Convertor is a tool that takes your CIE mark, along with grade thresholds to return
+                    the actual number of marks an indivudal has received.
+                    <br>
+                    I decided to make this after realising that learning my raw marks could be benificial for my
+                    own knowledge, however the formula needed to do so (alhtough not difficult) requires many steps.
+                    Through the site, I am able to calculate the marks faster for myself and others within an
+                    accuracy of 1 mark.
+                </td>
+                <td width="50%">
+                    <img src="assets/raw-converter.png" alt="Image of top half the CIE PUM to Raw Mark Convertor by shribytes."
+                    style="width: 95%; margin: 5px; border: solid 2px black">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--ASTROBLASTER-->
+    <div id="astroblaster" class="astroblaster" style="padding-top: 3vh;">
+        <div style="padding-top: 100px; padding-bottom: 100px; padding-left: 20%; padding-right: 20%;
+        text-align: center; align-items: center; justify-content: center;">
+            <h1 style="font-size: 50px;"><strong>ASTROBLASTER</strong></h1>
+            <br>
+            ASTROBLASTER is a 2d top down space shooter game made in Unity C#.
+            The game uses a joystick for movement and another button to shoot as its main form of control.
+            The objective is to shoot as many asteroids down before one of them hits you and causes you to lose.
+            Asteroids are generated from a locus of points equidistant from the centre of the camera, and
+            their direction is choosen at random from a point on the visible screen.
+            <br><br>
+            <a href="https://github.com/shribytes/astroblaster/raw/386fca3444ba7c3828747e5e7e25e50171d5c302/astroblaster-v1.2.1.apk" target="_blank">
+                <button class="button-astroblaster"><strong>Download APK</strong></button>
+            </a>
+        </div>
+    </div>
+
+    
+
+    <!--Back To Top-->
+    <a href="#" class="back-to-top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+</body>
+</html>

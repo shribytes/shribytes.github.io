@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background: linear-gradient(black 60%, #f7f7f7);
+}
+
+ul.navbar {
+    list-style: none;
+    padding-right: 20px;
+}
+ul.navbar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+ul.navbar li a, #link-github {
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul.navbar li a:hover, #link-github:hover {
+    color: lightblue;
+}
+
+ul.navbar li a::after, #link-github::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: lightblue;
+    display: block;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+ul.navbar li a:hover::after, #link-github:hover::after {
+    width: 100%;
+}
+
+#certifications {
+    padding-bottom: 2vh;
+}
+
+
+table, tr, td {
+    padding: 2px
+}
+.list-certs li {
+    list-style: none;
+}
+.list-certs li::before {
+    content: ">";
+    padding-right: 5px;
+}
+
+/*Astroblaster*/
+.astroblaster {
+    background-image: url(assets/astroblaster.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-blend-mode: color;
+    background-size: cover;
+    color: white;
+    padding-top: 10vh
+}
+
+.button-astroblaster {
+    font-size: 30px;
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#raw-mark {
+    background-color: lightblue;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+/*This is CSS for the back-to-top*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbbbbb;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+    color: black;
+    font-size: 20px;
+    transition: 0.2s ease-out;
+}
+.back-to-top:hover {
+    background-color: gray;
+    color: black;
+}
+.back-to-top:hover span {
+    transform: translateY(-4px);
+}
